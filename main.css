@@ -5,12 +5,18 @@
 }
 :root{
     --mainFont:"Lato", "sans-serif";
+    --maincolor: #FB2E86;
 }
+body{
+    height: 60000px;
+}
+
 .list_items a{
     text-decoration: none;
+    transition: .8s;
 }
 .container{
-    width: 90%;
+    width: 80%;
     margin: auto;
 }
 .navbar .container {
@@ -18,11 +24,15 @@
     justify-content: space-between;
     align-items: center;
     gap:88px;
+    
 }
 .navbar{
-     padding: 35px 367px ;
+  padding: 35px 100px ;
     background:#ffffff;
-    height: 40px;
+    height: 100px;
+    position: fixed;
+      position: fixed;
+      width: 100%;
 }
 .list_items ul{
  display: flex;
@@ -31,16 +41,22 @@
   list-style-type: none;
  font-family: var(--mainFont);
   font-size:16px;
-
 }
 .home{
-    color: #FB2E86;
+    color: var(--maincolor);
 }
 form{
     border: 2px #c0bfc0 solid;
     display: flex;
 }
 button{
-    background-color: #FB2E86;
+    background-color: var(--maincolor);
     border: none;
+     padding: 7px;
+    
 }
+.list_items a:hover{
+color:var(--maincolor);
+font-size: larger;
+}
+
