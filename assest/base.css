@@ -1,0 +1,31 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --mainFont:"Lato", "sans-serif";
+    --maincolor: #FB2E86;
+    --maintextcolor:#8A8FB9;
+}
+.container{
+    width: 85%;
+    margin: auto;
+    padding: 40px 40px ;
+}
+ul{
+ list-style-type: none;
+}
+a{
+text-decoration: none;
+}
+.btn{
+    display: flex;
+    flex-wrap: wrap;
+}
+.row{
+    display:flex;
+    flex-wrap: wrap;
+    align-items:flex-start; 
+    gap: 30px;
+}
