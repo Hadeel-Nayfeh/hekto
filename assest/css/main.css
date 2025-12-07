@@ -95,8 +95,6 @@ font-size:larger;
     flex-direction: column;
     justify-content: space-between;
     gap: 34px;
-
-   
 }
 
 .sign-up {
@@ -173,6 +171,9 @@ color:var(--maincolor);
 }
 .sign-up {
       padding: 8px;
+ }
+ .right-side{
+    text-align: center;
  }
 }
 @media screen and (min-width:602px) and (max-width:905px){
