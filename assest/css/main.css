@@ -81,7 +81,6 @@ font-size:larger;
      }
     
 }
-
 .footer{
     background-color:#EEEFFB;
     margin-top: 20px;
@@ -190,7 +189,7 @@ color:var(--maincolor);
 .hero{
     background-image: url(../img/bg.png);
     background-size: 100%;
-    height: 50vh;
+    height:50vh;
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
@@ -235,4 +234,91 @@ color:var(--maincolor);
         }
  
 }
+.Featured-Products h2{
+    text-align: center;
+    color: #1A0B5B;
+    font-size: 42px;
+    font-weight: 700;
+    font-family: "Josefin Sans", sans-serif;
+    padding-top: 20px;
+}
+.product .row{
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+.product{
+width: calc((100% - 90px)/4);
+box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+padding-bottom: 10px;
+   
+}
+.product-details h3{
+    font-family: var(--mainFont);
+    color: var(--maincolor);
+    font-size: 18px;
+    font-weight: 700;
+}
+.product-details{
+    background-color: #FFFFFF;
+    padding-top: 15px;
+}
+.product-img {
+    padding: 12px 30px;
+     background-color: #F6F7FB;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+.product-img img{
+    width: 178px;
+    height: 178px;
 
+}
+.product-details .row{
+    flex-direction: column;
+}
+.product-info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+    color: #151875;
+   font-family: "Josefin Sans", sans-serif;
+   font-size: 14px;
+   font-weight: 400;
+}
+.color{
+border: 0;
+margin: 0px;
+padding: 0px;
+border-radius:3px;
+width: 14px;
+height: 4px;
+}
+.product-btn .color1  {
+    background-color: #05E6B7;
+}
+.product-btn .color2{
+    background-color: #F701A8;
+}
+.product-btn .color3{
+    background-color: #00009D;
+}
+@media screen and (min-width: 0) and (max-width: 601px)
+{
+    .product{
+width: 100%;  
+}
+}
+@media screen and (min-width:602px) and (max-width:905px){
+    .product{
+width: calc((100% - 30px) /2);
+}
+}
+@media screen and (min-width:906px) and (max-width:1080px){
+        .product{
+width: calc((100% - 60px) /3);
+}
+}
