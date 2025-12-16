@@ -1,12 +1,12 @@
 
-.navbar .container {
+header .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     
 }
-.navbar{
+header{
     background:#ffffff;
     position: fixed;
       width: 100%;
@@ -17,6 +17,7 @@
 
 .list_items ul{
  display: flex;
+ flex-wrap: wrap;
   gap: 20px;
   color:#0D0E43;
  font-family: var(--mainFont);
@@ -87,7 +88,11 @@ font-size:larger;
     padding-bottom: 50px;
 
 }
-
+.footer .row{
+    align-items:flex-start;
+    gap: 30px;
+    
+}
 .left-side{
     display: flex;
     flex-wrap: wrap;
@@ -137,6 +142,7 @@ font-family: "Josefin Sans";
 } 
 .right-side .row{
      gap: 60px;
+
     
 } 
 .info{
@@ -188,8 +194,9 @@ color:var(--maincolor);
 }
 .hero{
     background-image: url(../img/bg.png);
-    background-size: 100%;
+    background-size: cover;
     height:50vh;
+    background-position: center;
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
@@ -216,23 +223,30 @@ color:var(--maincolor);
 }
 @media screen and (min-width: 0) and (max-width: 601px){
     .hero{
-    
+        padding: 0px;
         background-size: cover;
+        background-position: top center;
     }
-
         .hero-content{
-            font-size: 20px;
+            font-size: 16px;
+        }
+        .shop-btn button{
+    padding: 8px 25px;
+    font-size: 14px;
         }
 
 }
-@media screen and (min-width:602px) and (max-width:1200px){
+@media screen and (min-width:602px) and (max-width:1000px){
  .hero{
         background-size: cover;
     }
         .hero-content{
-            font-size: 25px;
+            font-size: 20px;
         }
  
+}
+.Featured-Products .row{ 
+    gap: 30px;
 }
 .Featured-Products h2{
     text-align: center;
