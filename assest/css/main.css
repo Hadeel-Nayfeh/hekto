@@ -615,7 +615,7 @@ max-width: 300px;
 .l-product-info .old-price{
       font-family:  "Josefin Sans", sans-serif;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 12px;
     color: #FB2448;
     text-decoration: line-through;
 }
@@ -662,4 +662,45 @@ width: calc((100% - 20px) /3);
     gap: 10px;
 }
 }
+.what-offer .row{
+    gap: 28px;
+}
+.what-offer h2 {
+      text-align: center;
+    color: #1A0B5B;
+    font-size: 42px;
+    font-weight: 700;
+    font-family: "Josefin Sans", sans-serif;
+    padding-top: 20px;
+}
+.offer{
+    width:calc((100% - 84px) /4)
+}
+.offer .row{
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
+    padding: 40px 20px ;
+}
+.offer .row img{
+    height: 65px;
+    width: 65px;
+}
+.offer .row h3{
+     font-family: "Josefin Sans", sans-serif;
+font-weight: 600;
+font-size: 22px;
+text-align: center;
+color: #151875;
 
+}
+.offer .row p{
+    text-align: center;
+    color: #1a0b5b40;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: var(--mainFont);
+    line-height: 25.6px;
+}
