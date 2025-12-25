@@ -9,21 +9,21 @@ header .container {
 header{
     background:#ffffff;
     position:sticky;
-      width: 100%;
-      top: 0;
-      z-index: 1000;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 .list_items a{
     transition: .8s;
 }
 
 .list_items ul{
- display: flex;
- flex-wrap: wrap;
-  gap: 20px;
-  color:#0D0E43;
- font-family: var(--mainFont);
-  font-size:16px;
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
+color:#0D0E43;
+font-family: var(--mainFont);
+font-size:16px;
 }
 .home{
     color: var(--maincolor);
@@ -32,7 +32,7 @@ header{
 button{
     background-color: var(--maincolor);
     border: none;
-     padding: 7px;
+    padding: 7px;
     
 }
 .list_items a:hover{
@@ -40,7 +40,7 @@ color:var(--maincolor);
 font-size: larger;
 }
 .menu{
-    display: none;
+display: none;
 }
 .menu:hover{
 color:var(--maincolor);
@@ -117,7 +117,7 @@ font-size:larger;
     line-height: 170%;
 }
 .content-side span{
-line-height: 23px;
+    line-height: 23px;
     font-size: 16px;
     font-weight: bold;
     color: #8A8FB9;
@@ -445,7 +445,7 @@ height: 4px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-justify-content: center;
+    justify-content: center;
 
 
 }
@@ -460,6 +460,7 @@ justify-content: center;
     color: #1DB4E7;
    align-items: center;
    justify-content: left;
+    transition: .8s;
 }
 .btn-product{
     visibility: hidden;
@@ -469,16 +470,6 @@ justify-content: center;
     justify-content: center;
     padding-bottom: 10px;
     
-}
-.product-icon svg:hover {
-    background-color: #EEEFFB;
-    border-radius: 8px;
-    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
-    padding:7px ;
-color: #2F1AC4;
-
-   
-
 }
 .product:hover .product-view{
    position: relative;
@@ -793,7 +784,7 @@ max-width: 275px;
 
 }
 .Trending-Products h2{
-       text-align: center;
+    text-align: center;
     color: #1A0B5B;
     font-size: 42px;
     font-weight: 700;
@@ -809,17 +800,17 @@ max-width: 275px;
     background-color: #FFFFFF;
     gap: 15px;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
-width: calc((100% - 120px)/4);
-max-width: 270px;
-padding: 15px 7px 32px ;
+    width: calc((100% - 120px)/4);
+    max-width: 270px;
+    padding: 15px 7px 32px ;
 }
 .t-product-img{
-   display: flex;
+    display: flex;
     background-color: #F5F6F8;
     padding:30px;
 }
 .t-product-img img{
-     width:171px;
+    width:171px;
     height: 171px;
 }
 .T-Product h3{
@@ -908,4 +899,121 @@ width: calc((100% - 56px) /3);
     justify-content: center;
 }
 
+}
+.Top-Categories .row{
+    gap: 40px;
+}
+.Top-Categories h2 {
+      text-align: center;
+    color: #1A0B5B;
+    font-size: 42px;
+    font-weight: 700;
+    font-family: "Josefin Sans", sans-serif;
+    padding-top: 20px;
+}
+.Top-Product{
+    width: calc((100% - 120px)/4);
+    max-width: 269px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+    
+}
+.top-img{
+    padding: 40px 50px;
+    display: flex;
+    flex-direction: column;
+    background-color: #F6F7FB;
+    border-radius: 50%;
+    padding: 30px 50px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    
+}
+.top-img .btn-product{
+    visibility: hidden;
+  
+
+
+}
+.top-img img{
+    width: 178px;
+    height: 178px;
+}
+.top-info{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    color: #151875;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 20px;
+
+}
+.Top-Product:hover .top-img {
+border-left: 10px solid #9877E7;
+border-bottom: 2px solid #9877E7;
+
+}
+.Top-Product:hover .top-img .btn-product{
+    
+    visibility: visible;
+}
+@media screen and (min-width: 0) and (max-width: 731px)
+{
+  .Top-Product{
+width: 100%;  
+
+}
+.Top-Categories.container{
+    width: 100%;
+    padding: 20px;
+}
+.Top-Categories h2{
+    font-size: 30px;
+}
+.Top-Categories .row{
+    align-items: center;
+    justify-content: center;
+}
+}
+@media screen and (min-width: 731px) and (max-width: 885px)
+{
+    .Top-Product{
+width: calc((100% - 20px) /2);  
+
+
+}
+.Top-Categories .container {
+    width: 100%;
+    padding: 0px;
+}
+.Top-Categories .row{
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.Top-Categories h2{
+    font-size: 30px;
+}
+}
+@media screen and (min-width: 885px) and (max-width: 1400px)
+{
+    .Top-Product{
+width: calc((100% - 60px) /3);  
+
+}
+.Top-Categories .container {
+    width: 100%;
+    padding: 10px;
+}
+.Top-Categories .row{
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
 }
