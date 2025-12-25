@@ -552,8 +552,8 @@ a:hover {
     flex-direction: column;
     justify-content: center;
     gap: 20px;
-width: calc((100% - 60px)/3);
-max-width: 300px;
+    width: calc((100% - 60px)/3);
+    max-width: 300px;
 }
 .l-product-img {
      display: flex;
@@ -1016,4 +1016,138 @@ width: calc((100% - 60px) /3);
     justify-content: center;
     gap: 30px;
 }
+}
+.Leatest-Blog h2 {
+      text-align: center;
+    color: #1A0B5B;
+    font-size: 42px;
+    font-weight: 700;
+    font-family: "Josefin Sans", sans-serif;
+    padding-top: 20px;
+}
+.Leatest-Blog .row{
+    gap: 50px;
+}
+.blog{
+    width: calc((100% - 100px)/3);
+    max-width: 360px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 5%;
+
+}
+.blog .row{
+    flex-direction: column;
+    gap: 20px;
+
+
+}
+.blog-Description{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0px 30px 30px 15px;
+}
+.blog-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 29px;
+
+}
+.blog-info .row{
+    flex-direction: row;
+    gap: 1px;
+    align-items: center;
+    
+}
+.blog-img img{
+    width: 100%;
+    height: 255px;
+    max-width:360px;
+
+    border-radius: 5%;
+} 
+.blog-info span{
+    color: #151875;
+}
+.blog-Description h3{
+    font-size: 18px;
+    color: #151875;
+    font-family: "Josefin Sans", sans-serif;
+    transition: .7s;
+}
+.blog-Description p{
+    font-family: var(--mainFont);
+    font-size: 16px;
+    color: #72718F;
+}
+.blog-Description a{
+    font-family: var(--mainFont);
+    transition: .7s;
+}
+.blog:hover .blog-Description h3{
+
+color: var(--maincolor);
+    }
+    .blog:hover .blog-Description a{
+text-decoration: underline;
+color: var(--maincolor);
+    }
+    @media screen and (min-width: 0) and (max-width: 341px)
+{
+  .blog{
+width: 100%;  
+
+}
+.Leatest-Blog .container{
+    width: 100%;
+    padding : 20px;
+}
+.Leatest-Blog h2{
+    font-size: 30px;
+}
+.Leatest-Blog .row{
+    align-items: center;
+    justify-content: center;
+}
+}
+
+@media screen and (min-width: 341px) and (max-width: 831px)
+{
+  .blog{
+width: 100%;  
+
+}
+.Leatest-Blog .container{
+    width: 100%;
+    padding : 20px;
+}
+.Leatest-Blog h2{
+    font-size: 30px;
+}
+.Leatest-Blog .row{
+    align-items: center;
+    justify-content: center;
+}
+
+
+}
+@media screen and (min-width: 831px) and (max-width: 1400px)
+{
+  .blog{
+width: calc((100% - 50px)/2);  
+
+}
+
+.Leatest-Blog .container{
+    width: 100%;
+    padding : 20px;
+}
+.Leatest-Blog h2{
+    font-size: 30px;
+}
+.Leatest-Blog .row{
+    align-items: center;
+    justify-content: center;
+}
+
 }
